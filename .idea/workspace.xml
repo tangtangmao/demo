@@ -141,6 +141,10 @@
       <find>优优</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -185,11 +189,12 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-140" />
-    <option name="y" value="70" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1748" />
     <option name="height" value="1079" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -316,13 +321,13 @@
     <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../qywxProject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.1920591" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -531,7 +536,7 @@
       <updated>1602644014698</updated>
       <workItem from="1602644099931" duration="5405000" />
       <workItem from="1602655312557" duration="12639000" />
-      <workItem from="1603079497538" duration="18651000" />
+      <workItem from="1603079497538" duration="19763000" />
     </task>
     <servers />
   </component>
@@ -568,11 +573,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36695000" />
+    <option name="totallyTimeSpent" value="37807000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.38802084" side_tool="true" weight="0.45986986" />
@@ -592,10 +596,10 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.9145833" weight="0.4273319" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.6119792" visible="true" weight="0.54121476" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.203125" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.6119792" visible="true" weight="0.54121476" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.203125" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
