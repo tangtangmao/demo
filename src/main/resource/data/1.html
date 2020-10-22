@@ -1,0 +1,858 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+    <meta name="renderer" content="webkit"/>
+    <title>设置-简单好用的互动课堂管理工具</title>
+    <meta name="keywords" content="课堂派、LMS、PPT互动、课中互动、助教神器、老师神器、作业收发系统、作业批改、在线作业、杜绝作业作弊、本地化部署"/>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand"/>
+    <meta name="description" content="教学改革，互动课堂，你可以在这里，组织课中互动，PPT互动，快速发布作业、在线批阅作业、作业查重、统计成绩，随时与你的学生进行沟通，是老师，教务管理的好帮手。支持本地化部署。"/>
+    <link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+    <link href="/Public/Common/css/common.css?v=2020091101" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Common/css/iconfont/iconfont.css?v=2020091101" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Common/js/lib/layer/skin/layer.css?v=2020091101" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Common/css/emoji.css?v=2020091101" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Home/css/previewfile.css?v=2020091101" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Home/css/sprites.css?v=2020091101" rel="stylesheet" type="text/css"/>
+    <script src="/Public/Home/language/zh-cn.js?v=2020091101"/>
+    <script id="seajsnode" src="/Public/Common/js/sea.js?v=2020091101"/>
+    <script src="/Public/Common/js/config/config.js?v=2020091101"/>
+    <link href="/Public/Home/css/settingV2.css?v=2020091101" rel="stylesheet" type="text/css"/>
+</head>
+<body class="bge">
+<div class="nav nav-default">
+    <ul class="nav-menu-left">
+        <li class="nav-menu-item ktplogo">
+            <a shape="rect" class="ketangpaitophref" href="/Index/index">
+                <img src="/Public/Home/img/logo-mainblue.png" alt="" width="96px" height="24px"/>
+            </a>
+        </li>
+        <li class="nav-menu-item">
+            <a shape="rect" href="/Main/index.html">课堂</a>
+        </li>
+        <li class="nav-menu-item jingpin" data-yy="0">
+            <a shape="rect" href="/ExcellentResources/index.html?type=1">精品慕课</a>
+        </li>
+        <li class="nav-menu-item">
+            <a shape="rect" href="/Mooc/Mooc/index.html">我的精品</a>
+        </li>
+        <li class="nav-menu-item">
+            <a shape="rect" href="/CampusIndex/index.html">双选会</a>
+        </li>
+        <li class="nav-menu-item paper">
+            <a shape="rect" data-href="https://lunwenh5.ketangpai.com/?token=MDAwMDAwMDAwMMurrpWavLehhs1-lLLfidqEp4OVepuomcWmmqaMiHtnr5ylzYWosKKZq6HQxtOK0ZCme5p-q6iZu2yrn4uNhJ3KedDYk7ivboS4jtux332Vg917lX96YW0" href="/Paper/index.html">
+                论文管理            <img src="/Public/Home/img/summary/hot.png" style="width: 21px;height: 10px;vertical-align: top;"/>
+            </a>
+        </li>
+    </ul>
+    <ul class="nav-menu-right">
+        <li class="nav-menu-item">
+            <a shape="rect" class="tools" href="https://prepc.ketangpai.com/" target="_blank" style="color:#7f7f7f;">
+                <i class="switchicon"/>
+                试用新版          </a>
+        </li>
+        <li class="nav-menu-item tool">
+            <a shape="rect" href="javascript:;">
+                <i class="toolicon"/>
+                工具          </a>
+            <span/>
+            <ul>
+                <li>
+                    <a shape="rect" href="/PaperCheckrepeat/index.html">
+                        <i class="for-duplicates" title="论文查重">论文查重</i>
+                    </a>
+                </li>
+                <li class="sjcz">
+                    <a shape="rect" href="javascript:;">
+                        <i class="sjczicon" title="学术存证">学术存证</i>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="nav-menu-item ico notice nav-mian-margin">
+            <a shape="rect" id="notice" href="javascript:;">
+                <i class="iconfont iconxiaoxi1"/>
+            </a>
+            <div class="notice-ct hide notice-new-ct">
+                <p class="zw">暂无新通知</p>
+                <div class="bt-bar">
+                    <div class="more operation-more">
+                        <a shape="rect" class="operation-more-ingoreall" id="ignore-all" href="javascript:void(0);">全部标记已读</a>
+                        <a shape="rect" class="link operation-more-ink" href="/Message/index.html">查看全部</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="nav-menu-item user">
+            <a shape="rect" id="user" href="javascript:;">
+                <img class="avatar" src="http://www.ketangpai.com/Public/Common/img/40/20.png" alt="优优1" title="优优1"/>
+            </a>
+            <div class="user-info hide">
+                <ul>
+                    <li class="">
+                        <a shape="rect" class="vipnew" id="vipClick" href="/VipActivity/pay.html">开通VIP</a>
+                    </li>
+                    <li>
+                        <a shape="rect" class="mechanismWjgSw" id="mechanismWjg">机构账号绑定</a>
+                    </li>
+                    <li>
+                        <a shape="rect" class="link setting" href="/User/setting.html">个人设置</a>
+                    </li>
+                    <li>
+                        <a shape="rect" class="link logout" href="/User/logout.html">退出账户</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mechanismWjgClass" style="width:60%">
+                <div class="view">
+                    <div class="one" id="mechanismWjgClassCheck">
+                        <div class="top">
+                            <span>认证绑定机构用户身份</span>
+                            <span class="clone wCloneMechaniswclass">X</span>
+                        </div>
+                        <div class="cont">
+                            <div class="choose-box" id="wSchoolId">
+                                <div class="choose-item">
+                                    <div class="item">
+                                        <div class="searchsW">
+                                            <input type="text" id="wSearchSchool" placeholder="请输入您的学校进行选择"/>
+                                            <i id="slideDownSarchs"/>
+                                        </div>
+                                        <div class="item-box" id="itemBOxSchoolW" style="display: none;"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-box">
+                                <span>输入姓名</span>
+                                <input type="text" class="txt1"/>
+                            </div>
+                            <div class="input-box" id="teacheridW">
+                                <span>输入教工号</span>
+                                <input type="text" class="txt2"/>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <a shape="rect" class="cancel wCloneMechaniswclass" href="javascript:;">以后再说</a>
+                            <a shape="rect" class="sure" id="sureNext" href="javascript:;"> 下一步</a>
+                            <a shape="rect" class="sure" id="sureWrenTwo" href="javascript:;">确定认证</a>
+                        </div>
+                    </div>
+                    <div class="curriculum" id="curriculumWtwo">
+                        <div class="top">
+                            <span>认证绑定机构为您编排的课程</span>
+                            <span class="clone cloneWRelationView">X</span>
+                        </div>
+                        <div class="curriculumWtwoCont">
+                            <div class="curriculumList">
+                                <div class="tbHead">
+                                    <span>课程教学班名称</span>
+                                    <span>线上课堂</span>
+                                    <span>操作</span>
+                                </div>
+                                <div class="tbBody"/>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <a shape="rect" class="cancel cloneWRelationView" href="javascript:;">取消</a>
+                            <a shape="rect" class="sure" id="sureRenZ" href="javascript:;"> 确定认证</a>
+                        </div>
+                    </div>
+                    <div class="RelationView" id="RelationViewThree">
+                        <div class="top">
+                            <span>选择已创建的线上课堂</span>
+                            <span class="clone cloneWRelationViewThree">X</span>
+                        </div>
+                        <div class="checkedClass">
+                            <p>被绑定的对象课程教学班：</p>
+                            <div>
+                                <span class="classn"/>
+                                <span class="classa"/>
+                            </div>
+                        </div>
+                        <div class="Relationcont"/>
+                        <div class="footer">
+                            <a shape="rect" class="cancel cloneWRelationViewThree" href="javascript:;">取消</a>
+                            <a shape="rect" class="sure" id="sureWrenThree" href="javascript:;"> 确定选择</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <script id="tpl-mechanismLsits" type="text/html">
+
+            {{if data!=null &amp;&amp; data.length&gt;0}}
+            {{each data as item}}
+            &lt;a data-id="{{item.coid}}" href="javascript:;" data-name="{{item.name}}"&gt;{{item.name}}&lt;/a&gt;
+            {{/each}}
+
+            {{else}}
+            &lt;span style="display: block;text-align: center;"&gt;暂无数据&lt;/span&gt;
+            {{/if}}
+        </script>
+        <script id="tpl-RelationMwechanismLsits" type="text/html">
+            {{if data!=null &amp;&amp; data.length&gt;0}}
+            {{each data as item}}
+            &lt;div class="item" style='height:60px;line-height:60px;' data-id="{{item.id}}" data-classid={{item.classid}} data-teachClass="{{item.teachClass}}" data-classname="{{item.classname}}"&gt;
+            &lt;span class="name" style='line-height:25px'&gt;&lt;span style='display:inline-block;width:100%'&gt;{{item.teachClass}}&lt;/span&gt;&lt;br&gt;&lt;span style='font-size:12px;color:#868686;display:inline-block;width:100%'&gt;{{item.classname}}&lt;/span&gt;&lt;/span&gt;
+            {{if item.classid}}
+            &lt;span class="desc active" style='line-height:25px' data-id="{{item.classid}}"&gt;&lt;span style='display:inline-block;width:100%'&gt;{{item.coursename}}&lt;/span&gt;&lt;br&gt;&lt;span style='font-size:12px;color:#868686;display:inline-block;width:100%'&gt;{{item.classnameKtp}}&lt;/span&gt;&lt;/span&gt;
+            {{else}}
+            &lt;span class="desc"&gt;没有课堂，允许系统创建&lt;/span&gt;
+            {{/if}}
+
+            {{if item.classnameKtp}}
+            &lt;span class="optionsw relation-btn" style='font-size:14px;width:13%;'&gt;变更绑定&lt;/span&gt;
+            &lt;span class="optionsw relation-cancel" style='font-size:14px;width:13%;'&gt;取消绑定&lt;/span&gt;
+            {{else}}
+            &lt;span class="optionsw relation-btn" style='font-size:14px;'&gt;绑定已有课堂&lt;/span&gt;
+            {{/if}}
+            &lt;/div&gt;
+            {{/each}}
+            {{else}}
+            &lt;div style="text-align: center;"&gt; 暂无数据&lt;/div&gt;
+            {{/if}}
+
+        </script>
+        <script id="tpl-RelationMwechanismCheckLsits" type="text/html">
+            {{if data!=null &amp;&amp; data.length&gt;0}}
+            {{each data as item}}
+            &lt;div class="item " data-id="{{item.id}}" data-classname="{{item.classname}}"  data-name="{{item.coursename}}"&gt;
+            &lt;span&gt;&lt;/span&gt;
+            &lt;p style='display:inline-block;width:90%;height:100%;line-height:45px'&gt;
+            &lt;span style='border:none;background:transparent;display:inline-block;width:40%;white-space: nowrap;overflow:hidden;text-overflow:ellipsis;height:100%;border-radius:0px;'&gt;{{item.coursename}}&lt;/span&gt;
+            &lt;span style='border:none;background:transparent;color:#868686;display:inline-block;width:40%;white-space: nowrap;overflow:hidden;text-overflow:ellipsis;border-radius:0px;height:100%'&gt;{{item.classname}}&lt;/span&gt;
+            &lt;/p&gt;
+            &lt;/div&gt;
+            {{/each}}
+            {{else}}
+            &lt;div style="text-align: center;"&gt; 暂无数据&lt;/div&gt;
+            {{/if}}
+
+
+        </script>
+        <script type="text/javascript">
+            seajs.use('/Public/Home/js/thirdheader.js',function(ex){
+                ex.goSjcz()
+            });
+        </script>
+    </ul>
+</div>
+<div class="uc-layer-top self">
+    <div class="uc-avatar face-icon">
+        <img id="user-avatar" src="http://www.ketangpai.com/Public/Common/img/40/20.png" alt="优优1"/>
+        <a shape="rect" class="change-avatar avatar upload" href="javascript:;">更改头像</a>
+        <div class="marks"/>
+    </div>
+    <h1 class="uc-name">优优1</h1>
+    <p class="uc-subtit">
+        <span class="jifentxt">当前积分：0
+                    </span>
+        <span class="viptxt">
+          <a shape="rect" href="/VipActivity/pay" target="_blank">开通课堂派VIP</a>
+        </span>
+    </p>
+    <div class="s-header">
+        <div class="h-nav">
+            <a shape="rect" class="active" href="javascript:;">个人资料</a>
+            <a shape="rect" href="javascript:;">通知设置</a>
+        </div>
+    </div>
+</div>
+<div class="setting-page cWidth">
+    <div class="item-change">
+        <div class="setting-item hide">
+            <div class="options basic">
+                <h3 class="title">基本资料</h3>
+                <ul style="position: relative;">
+                    <li>
+                        <p>姓名：</p>
+                        <div class="edit-box">
+                            <span>优优1</span>
+                            <input type="text" class="txts" name="name" placeholder="请输入姓名"/>
+                        </div>
+                        <a shape="rect" class="edit-btn" href="javascript:;">编辑资料</a>
+                        <a shape="rect" class="exit-edit" href="javascript:;">放弃编辑</a>
+                    </li>
+                    <li>
+                        <p>学校：</p>
+                        <div class="edit-box">
+                            <span>河北理工科技大学</span>
+                            <input type="text" class="txts" name="school" placeholder="请输入学校"/>
+                        </div>
+                    </li>
+                </ul>
+                <a shape="rect" class="save-btn hide2" href="javascript:;">保存</a>
+            </div>
+            <div class="options rolechange">
+                <h3 class="title">身份角色</h3>
+                <ul>
+                    <li>
+                        <p>角色：</p>
+                        <div class="edit-box">
+                  <span>
+                                        学生                                    </span>
+                            <div class="radio1 hide2" style="float:left;margin-right:15px;">
+                                <input checked="true" type="radio" id="userrole1" name="userrole" value="0"/>
+                                学生                                  </div>
+                            <div class="radio2 hide2" style="float:left;">
+                                <input type="radio" id="userrole2" name="userrole" value="1"/>
+                                老师                                  </div>
+                        </div>
+                        <a shape="rect" class="edit-btn" href="javascript:;">变更身份</a>
+                        <a shape="rect" class="exit-edit" href="javascript:;">放弃变更</a>
+                    </li>
+                </ul>
+                <a shape="rect" class="save-btn hide2" href="javascript:;">变更</a>
+            </div>
+            <div class="options account">
+                <h3 class="title">账号设置</h3>
+                <ul>
+                    <li>
+                        <p>账号：</p>
+                        <div class="edit-box">
+                            <span>ktp0214741979</span>
+                        </div>
+                    </li>
+                    <li>
+                        <p>邮箱：</p>
+                        <div class="edit-box">
+                            <span>1185375204@qq.com</span>
+                        </div>
+                        <a shape="rect" class="edit-btn change-mail" href="javascript:;">修改</a>
+                    </li>
+                    <li>
+                        <p>手机：</p>
+                        <div class="edit-box">
+                            <span>未绑定</span>
+                        </div>
+                        <a shape="rect" class="edit-btn change-mobile blue" href="javascript:;">绑定</a>
+                    </li>
+                </ul>
+                <div class="mail hide">
+                    <ul>
+                        <li>
+                            <p>当前邮箱：</p>
+                            <div class="edit-box">
+                                <span>1185375204@qq.com</span>
+                                <a shape="rect" class="unbind" href="javascript:;">解绑</a>
+                            </div>
+                            <a shape="rect" class="exit-edit" href="javascript:;">放弃编辑</a>
+                        </li>
+                        <li>
+                            <p>新邮箱：</p>
+                            <div class="edit-box">
+                                <input type="text" class="txts" name="newemail" placeholder="请输入新邮箱"/>
+                            </div>
+                        </li>
+                        <li>
+                            <p>密码校验：</p>
+                            <div class="edit-box">
+                                <input type="password" class="txts" name="pass1" placeholder="请输入登录密码进行验证"/>
+                            </div>
+                        </li>
+                    </ul>
+                    <a shape="rect" class="save-btn" href="javascript:;">保存</a>
+                </div>
+                <div class="mobile hide">
+                    <ul>
+                        <li>
+                            <p style="width: 90px;">当前手机：</p>
+                            <div class="edit-box">
+                                <span>未绑定</span>
+                            </div>
+                            <a shape="rect" class="exit-edit" href="javascript:;">放弃编辑</a>
+                        </li>
+                        <li>
+                            <p style="width: 90px;">新手机：</p>
+                            <div class="edit-box">
+                                <input type="text" class="txts" name="mobile" placeholder="请输入手机号码"/>
+                            </div>
+                        </li>
+                        <li style="height:40px;">
+                            <p style="width: 90px;">图形验证码：</p>
+                            <div class="edit-box" style="height:40px;">
+                                <div class="yzm" style="height:40px;">
+                                    <input type="text" class="txtyzm" style="height:40px;" name="verify"/>
+                                    <img class="verifyimg reloadverify" style="width: 93px;height: 40px;" alt="点击切换" src="/UserApi/simplyVerify.html"/>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <p style="width: 90px;">短信验证码：</p>
+                            <div class="edit-box">
+                                <div class="yzm">
+                                    <input type="text" class="txtyzm" name="code" placeholder="验证码"/>
+                                    <a shape="rect" href="javascript:;">获取验证码</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <a shape="rect" class="save-btn" href="javascript:;">保存</a>
+                </div>
+            </div>
+            <div class="options pass">
+                <h3 class="title">密码</h3>
+                <ul>
+                    <li>
+                        <p>密码：</p>
+                        <div class="edit-box">
+                            <span>***********</span>
+                        </div>
+                        <a shape="rect" class="edit-btn" href="javascript:;">更换密码</a>
+                    </li>
+                </ul>
+                <div class="password hide">
+                    <ul>
+                        <li>
+                            <p>新密码：</p>
+                            <div class="edit-box">
+                                <input type="password" class="txts" name="newpass" placeholder="请输入新密码"/>
+                                <span style="color:red;font-size:12px">(1.6~20个字符；??2.字母、数字以及标点符号至少包含2种；??3.大小写字母、数字以及标点符号。)</span>
+                            </div>
+                            <a shape="rect" class="exit-edit" href="javascript:;">放弃更改2134</a>
+                        </li>
+                        <li>
+                            <p>确认密码：</p>
+                            <div class="edit-box">
+                                <input type="password" class="txts" name="surepass" placeholder="确认密码"/>
+                            </div>
+                        </li>
+                    </ul>
+                    <a shape="rect" class="save-btn" href="javascript:;">保存</a>
+                </div>
+            </div>
+            <div class="options wx">
+                <h3 class="title">第三方账号绑定</h3>
+                <ul>
+                    <li>
+                        <p>微信：</p>
+                        <div class="edit-box">
+                            <span>未绑定</span>
+                        </div>
+                        <a shape="rect" class="edit-btn" id="bind-wechat" href="javascript:;">绑定微信</a>
+                        <a shape="rect" class="edit-btn hide2" id="remove-bind-wechat" href="javascript:;">取消绑定</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="notice-item hide">
+            <div class="title clearfix">
+                <h2 class="l-box fl">消息推送</h2>
+                <h3 class="r-box fr">邮件/微信</h3>
+            </div>
+            <ul>
+                <li>
+                    <div class="l-box fl">
+                        <h3>作业到期</h3>
+                        <p>作业到截止日期接收消息推送</p>
+                    </div>
+                    <div class="r-box fr">
+                        <div class="switch-box noty2">
+                            <span>开</span>
+                            <div>
+                                <a shape="rect" class="active" href="javascript:;">开</a>
+                                <a shape="rect" href="javascript:;">关</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="l-box fl">
+                        <h3>课堂私信</h3>
+                        <p>有老师/同学私信后接收消息推送</p>
+                    </div>
+                    <div class="r-box fr">
+                        <div class="switch-box noty3">
+                            <span>开</span>
+                            <div>
+                                <a shape="rect" class="active" href="javascript:;">开</a>
+                                <a shape="rect" href="javascript:;">关</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="t-tips">
+                <p>注：消息推送优先发微信，微信发送失败，改发邮件</p>
+                <p>　　消息推送提醒时间为8-22点，其他时间段无消息提醒</p>
+            </div>
+        </div>
+        <div class="wenkudownlist hide">
+            <div class="change-box">
+                <div class="item">
+                    <a shape="rect" class="active" href="javascript:;">我的上传（0）</a>
+                    <a shape="rect" href="javascript:;">我的收藏（0）</a>
+                    <a shape="rect" href="javascript:;">我的下载（0）</a>
+                </div>
+            </div>
+            <div class="tableBox"/>
+        </div>
+    </div>
+</div>
+<div class="mask-layer hide"/>
+<div class="setting-layer qrcode hide" data-api="/Wechat/qrcode/ticket/MDAwMDAwMDAwMLWGsZaG36uyhN6CoQ/token/ketangpai/appid/wxee6b4fab5696d388.html">
+    <a shape="rect" class="settingclose" href="javascript:void(0);"/>
+    <div class="wechat-container">
+        <span class="loading-txt">正在加载二维码...</span>
+        <img id="wechat-qrcode" src="" alt="" style="width:226px;height:226px;"/>
+    </div>
+    <span class="bind-wechatuid">使用微信扫码，绑定账号</span>
+</div>
+<div class="little-pop" id="remove_bind">
+    <h3 class="word">确定要解除绑定？</h3>
+    <ul class="remove-bind-tip">
+        <li>不能使用微信扫码登录</li>
+        <li>收不到微信通知</li>
+    </ul>
+    <div class="btns">
+        <a shape="rect" class="cancel" href="javascript:;">取消</a>
+        <a shape="rect" class="sure active" href="javascript:;">解除</a>
+    </div>
+</div>
+<div class="little-pop" id="faceUploader">
+    <h3 class="word">设置头像</h3>
+    <form enctype="multipart/form-data" method="post" id="formAddHandlingFee" action="" name="formAddHandlingFee">
+        <div class="uploader-container clearfix">
+            <div class="frame">
+                <a shape="rect" class="faceUploaderPlus" id="filePicker" href="javascript:;">+</a>
+                <img class="uploaderFace" id="photo" src=""/>
+            </div>
+            <div id="preview">
+                <img id="view_photo" src="http://www.ketangpai.com/Public/Common/img/40/20.png" border="0" width="100"/>
+            </div>
+            <input type="file" class="hide" id="upload" name="file"/>
+        </div>
+        <div class="btns">
+            <a shape="rect" class="cancel" href="javascript:;">取消</a>
+            <a shape="rect" class="sure active" href="javascript:;">确定</a>
+        </div>
+    </form>
+</div>
+<div class="little-pop unbind-box" id="unbind-mobile">
+    <h3 class="title">
+        确定要解绑“        <span/>
+        ”？      </h3>
+    <p class="re-words">解绑手机后，您将无法再使用该号码找回密码及登录操作</p>
+    <div class="btns">
+        <a shape="rect" class="cancel" href="javascript:;">取消</a>
+        <a shape="rect" class="sure active" href="javascript:;">下一步</a>
+    </div>
+</div>
+<div class="tel-validate" id="v-mobile">
+    <div class="title">
+        <h3>手机安全验证</h3>
+        <a shape="rect" class="close" href="javascript:;"/>
+    </div>
+    <p class="words">为了保证您的账号安全，解绑手机前请进行安全验证</p>
+    <p class="words">
+        动态验证码已发送至        <span>“ 15139133835 ”</span>
+    </p>
+    <div class="yzm-box clearfix">
+        <div class="input fl">
+            <span>验证码：</span>
+            <input type="text" autocomplete="off" name="yzm"/>
+        </div>
+        <a shape="rect" class="get-yzm" href="javascript:;">获取验证码</a>
+    </div>
+    <a shape="rect" class="button" href="javascript:;">完成验证</a>
+</div>
+<div class="little-pop unbind-box" id="unbind-mail">
+    <h3 class="title">
+        确定要解绑“        <span/>
+        ”吗？      </h3>
+    <p class="re-words">解绑邮箱后，您将无法再使用该邮箱找回密码及登录操作</p>
+    <div class="btns">
+        <a shape="rect" class="cancel" href="javascript:;">取消</a>
+        <a shape="rect" class="sure active" href="javascript:;">下一步</a>
+    </div>
+</div>
+<div class="tel-validate" id="v-mail">
+    <div class="title">
+        <h3>安全验证</h3>
+        <a shape="rect" class="close" href="javascript:;"/>
+    </div>
+    <p class="words">为了保证您的账号安全，解绑邮箱前请进行安全验证</p>
+    <div class="yzm-box clearfix">
+        <div class="input">
+            <span style="width: 90px">登录密码：</span>
+            <input type="password" autocomplete="off" name="yzm" style="width: 250px"/>
+        </div>
+    </div>
+    <a shape="rect" class="button" href="javascript:;">完成验证</a>
+</div>
+<script id="tpl-enterpriseList" type="text/html">
+    &lt;form class="layui-form" action=""&gt;
+    &lt;li&gt;
+    &lt;p&gt;企业名称：&lt;/p&gt;
+    &lt;div class="edit-box"&gt;
+    {{if ename}}
+    &lt;span&gt;{{ename}}&lt;/span&gt;
+    {{else}}
+    &lt;font class="zanwu"&gt;暂无&lt;/font&gt;
+    {{/if}}
+    &lt;input type="text" class="txts" name="ename" placeholder="企业名称"&gt;
+    &lt;/div&gt;
+    &lt;a href="javascript:;" class="edit-btn"&gt;编辑资料&lt;/a&gt;
+    &lt;a href="javascript:;" class="exit-edit"&gt;放弃编辑&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;统一社会信用代码：&lt;/p&gt;
+    &lt;div class="edit-box"&gt;
+    {{if creditcode}}
+    &lt;span&gt;{{creditcode}}&lt;/span&gt;
+    {{else}}
+    &lt;font class="zanwu"&gt;暂无&lt;/font&gt;
+    {{/if}}
+    &lt;input type="text" class="txts" name="creditcode" placeholder="统一社会信用代码"&gt;
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;企业规模：&lt;/p&gt;
+    &lt;div class="edit-box"&gt;
+    {{if scale}}
+    &lt;span&gt;{{scale}}&lt;/span&gt;
+    {{else}}
+    &lt;font class="zanwu"&gt;暂无&lt;/font&gt;
+    {{/if}}
+    &lt;!-- &lt;input type="text" class="txts" name="scale" placeholder="企业规模"&gt; --&gt;
+    &lt;select name="scale" class="selectTxt"&gt;
+    &lt;option selected="selected" disabled="disabled" value=""&gt;选择企业规模&lt;/option&gt;
+    &lt;option value="1-50"&gt;1-50&lt;/option&gt;
+    &lt;option value="51-100"&gt;51-100&lt;/option&gt;
+    &lt;option value="101-200"&gt;101-200&lt;/option&gt;
+    &lt;option value="201-500"&gt;201-500&lt;/option&gt;
+    &lt;option value="501-1000"&gt;501-1000&lt;/option&gt;
+    &lt;option value="1001及以上"&gt;1001及以上&lt;/option&gt;
+    &lt;/select&gt;
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;企业地址：&lt;/p&gt;
+    &lt;div class="edit-box"&gt;
+    {{if address}}
+    &lt;span&gt;{{address}}&lt;/span&gt;
+    {{else}}
+    &lt;font class="zanwu"&gt;暂无&lt;/font&gt;
+    {{/if}}
+    &lt;input type="text" class="txts" name="address" placeholder="企业地址"&gt;
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+    &lt;p&gt;所属行业：&lt;/p&gt;
+    &lt;div class="edit-box"&gt;
+    {{if industry}}
+    &lt;span&gt;{{industry}}&lt;/span&gt;
+    {{else}}
+    &lt;font class="zanwu"&gt;暂无&lt;/font&gt;
+    {{/if}}
+    &lt;input type="text" class="txts" name="industry" placeholder="所属行业"&gt;
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class="box-warp"&gt;
+    &lt;p class="title-p"&gt;企业简介：&lt;/p&gt;
+    &lt;div class="qyEdit-box"&gt;
+    {{if description}}
+    &lt;span&gt;{{description}}&lt;/span&gt;
+    {{else}}
+    &lt;font class="zanwu"&gt;暂无&lt;/font&gt;
+    {{/if}}
+    &lt;textarea name="description"  placeholder="企业简介" class="textarea-tag"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;!-- 资质证明 --&gt;
+    &lt;li class="box-warp"&gt;
+    &lt;p class="title-p"&gt;资质证明：&lt;/p&gt;
+    &lt;div class="qyEdit-box gu-edit"&gt;
+    {{if attachment}}
+    {{each attachment as value i}}
+    &lt;span&gt;&lt;img class='layui-upload-img' src="{{value.url}}" alt=""&gt;&lt;/span&gt;
+    {{/each}}
+    {{else}}
+    &lt;font class="zanwu"&gt;暂无&lt;/font&gt;
+    {{/if}}
+    &lt;div class="add-comment-img textarea-tag"&gt;
+    &lt;p&gt;请上传企业资质证明材料图片，包括但不限于企业营业执照等&lt;/p&gt;
+    &lt;div class="layui-upload"&gt;
+    &lt;button type="button" class="layui-btn" id="uploadImgBtn"&gt;上传图片&lt;/button&gt;
+    &lt;div class="layui-upload-list clearfix" id="aptitude"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;/form&gt;
+</script>
+<span style="display: none">
+      <script type="text/javascript">
+var localToken = localStorage['token'];
+if(localToken == null || localToken == ""){
+    var token = 'MDAwMDAwMDAwMMurrpWavLehhs1-lLLfidqEp4OVepuomcWmmqaMiHtnr5ylzYWosKKZq6HQxtOK0ZCme5p-q6iZu2yrn4uNhJ3KedDYk7ivboS4jtux332Vg917lX96YW0';
+    if(token != ""){
+        localStorage['token'] =  token;
+    }
+}
+</script>
+      <script>
+var _mtac = {};
+(function() {
+    var mta = document.createElement("script");
+    mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
+    mta.setAttribute("name", "MTAH5");
+    mta.setAttribute("sid", "500697306");
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(mta, s);
+})();
+</script>
+    </span>
+<div class="help-dips">
+    <a shape="rect" class="help-icon help-icon-ques" href="javascript:;"/>
+    <div class="help-dips-box" style="display: none;">
+        <i class="help-icon help-icon-bdot"/>
+        <a shape="rect" class="btn-feedback" href="javascript:;">反馈问题</a>
+        <a shape="rect" href="/index/updateDynamics" target="_blank">产品动态</a>
+        <a shape="rect" href="/help/index.html" target="_blank">帮助中心</a>
+    </div>
+</div>
+<div class="privateLetter">
+    <a shape="rect" href="/Letter/index.html" target="_blank"/>
+</div>
+<div class="toolcase">
+    <a shape="rect" href="javascript:;"/>
+    <span/>
+    <ul>
+        <li class="paper-repeat nav-menu-item">
+            <a shape="rect" href="/PaperCheckrepeat/index.html">
+                <i class="for-duplicates" title="论文查重">论文查重</i>
+            </a>
+        </li>
+        <li class="sjcz nav-menu-item">
+            <a shape="rect" href="javascript:;">
+                <i class="sjczicon" title="学术存证">学术存证</i>
+            </a>
+        </li>
+    </ul>
+</div>
+<a shape="rect" class="back-to-top" href="javascript:;"/>
+<div class="little-pop layer-feedBack" id="feedBackWindow" data-email="1185375204@qq.com">
+    <div class="feedback-header clearfix">
+        <a shape="rect" class="closeFeedback fr" href="javascript:;"/>
+    </div>
+    <h3 class="title">课堂派反馈</h3>
+    <div class="feedMessageBox">
+        <span>周一至周五，我们会在收到反馈两个小时内给您回复</span>
+        <span>周末及节假日收到的反馈，我们会在节后1个工作日内给您回复</span>
+        <span>学生推荐加入『课堂派学生服务⑤群』 QQ群号:633308788</span>
+        <textarea id="feedEditor" autofocus="autofocus"/>
+    </div>
+    <div class="btns">
+        <span class="yourEmail">
+您的邮箱：          <input type="email" name="email" value="1185375204@qq.com"/>
+        </span>
+        <a shape="rect" class="cancel" href="javascript:;">取消</a>
+        <a shape="rect" class="sure" href="javascript:;">确定</a>
+    </div>
+</div>
+<link href="/Public/Common/js/lib/simditor-1.0.3/styles/simditor.css" rel="stylesheet" type="text/css"/>
+<script>seajs.use('/Public/Home/js/thirdheader.js',function(ex){ex.feedback();});</script>
+<script id="tpl-downfilelist" type="text/html">
+    &lt;table class="table table-striped"&gt;
+    {{if index==0}}
+    {{if lists&amp;&amp;lists.length&gt;0}}
+    &lt;thead&gt;
+    &lt;tr&gt;
+    &lt;th width="40"&gt;名称&lt;/th&gt;
+    &lt;th width="400"&gt;&lt;/th&gt;
+    &lt;th width="80"&gt;浏览量&lt;/th&gt;
+    &lt;th width="80"&gt;下载量&lt;/th&gt;
+    &lt;th width="80"&gt;收藏量&lt;/th&gt;
+    &lt;th width="110"&gt;上传时间&lt;/th&gt;
+    &lt;th width="110"&gt;审核状态&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    {{/if}}
+    &lt;tbody&gt;
+    {{if lists==null||lists.length==0}}
+    &lt;tr&gt;&lt;td colspan="7" align="center"&gt;暂无上传记录&lt;/td&gt;&lt;/tr&gt;
+    {{else}}
+    {{each lists as value i}}
+    &lt;tr {{if value.isvalid=='1'}}onclick="window.open('/Wenku/Wenku/document/id/{{value.docid}}','_blank')"{{/if}}&gt;
+    &lt;td&gt;&lt;img src="{{value.ext}}" alt="" width="24" height="24"&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;div class="title text-overflow"&gt;{{if value.isvalid=='1'}}&lt;a&gt;{{value.title}}&lt;/a&gt;{{else}}{{value.title}}{{/if}}&lt;/div&gt;&lt;/td&gt;
+    &lt;td&gt;{{value.readCount}}&lt;/td&gt;
+    &lt;td&gt;{{value.downloadCount}}&lt;/td&gt;
+    &lt;td&gt;{{value.favoriteCount}}&lt;/td&gt;
+    &lt;td&gt;{{year_month_day value.createtime}}&lt;/td&gt;
+    &lt;td&gt;{{if value.isvalid=='0'}}&lt;span class="ing"&gt;正在审核&lt;/span&gt;{{else if value.isvalid=='1'}}&lt;span class="succ"&gt;审核通过&lt;/span&gt;{{else if value.isvalid=='2'}}&lt;span class="fail"&gt;审核未通过&lt;/span&gt;{{/if}}&lt;/td&gt;
+    &lt;/tr&gt;
+    {{/each}}
+    {{/if}}
+    &lt;/tbody&gt;
+    {{else if index==1}}
+    {{if lists&amp;&amp;lists.length&gt;0}}
+    &lt;thead&gt;
+    &lt;tr&gt;
+    &lt;th width="40"&gt;名称&lt;/th&gt;
+    &lt;th width="500"&gt;&lt;/th&gt;
+    &lt;th width="150"&gt;上传用户&lt;/th&gt;
+    &lt;th width="80"&gt;浏览量&lt;/th&gt;
+    &lt;th width="110"&gt;收藏时间&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    {{/if}}
+    &lt;tbody&gt;
+    {{if lists==null||lists.length==0}}
+    &lt;tr&gt;&lt;td colspan="5" align="center"&gt;暂无收藏记录&lt;/td&gt;&lt;/tr&gt;
+    {{else}}
+    {{each lists as value i}}
+    &lt;tr onclick="window.open('/Wenku/Wenku/document/id/{{value.docid}}','_blank')"&gt;
+    &lt;td&gt;&lt;img src="{{value.ext}}" alt="" width="24" height="24"&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;div class="title text-overflow"&gt;&lt;a&gt;{{value.title}}&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+    &lt;td&gt;{{value.author}}&lt;/td&gt;
+    &lt;td&gt;{{value.readCount}}&lt;/td&gt;
+    &lt;td&gt;{{year_month_day value.createtime}}&lt;/td&gt;
+    &lt;/tr&gt;
+    {{/each}}
+    {{/if}}
+    &lt;/tbody&gt;
+    {{else if index==2}}
+    {{if data&amp;&amp;data.length&gt;0}}
+    &lt;thead&gt;
+    &lt;tr&gt;
+    &lt;th width="40"&gt;名称&lt;/th&gt;
+    &lt;th width="648"&gt;&lt;/th&gt;
+    &lt;th width="80"&gt;浏览量&lt;/th&gt;
+    &lt;th width="110"&gt;下载时间&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    {{/if}}
+    &lt;tbody&gt;
+    {{if data==null||data.length==0}}
+    &lt;tr&gt;&lt;td colspan="4" align="center"&gt;暂无下载记录&lt;/td&gt;&lt;/tr&gt;
+    {{else}}
+    {{each data as value i}}
+    &lt;tr onclick="window.open('/Wenku/Wenku/document/id/{{value.docid}}','_blank')"&gt;
+    &lt;td&gt;&lt;img src="{{value.ext}}" alt="" width="24" height="24"&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;div class="title text-overflow"&gt;&lt;a&gt;{{value.title}}&lt;/a&gt;&lt;/div&gt;&lt;/td&gt;
+    &lt;td&gt;{{value.viewCount}}&lt;/td&gt;
+    &lt;td&gt;{{year_month_day value.createtime}}&lt;/td&gt;
+    &lt;/tr&gt;
+    {{/each}}
+    {{/if}}
+    &lt;/tbody&gt;
+    {{/if}}
+    &lt;/table&gt;
+    &lt;div class="page clearfix" style="margin-top:36px"&gt;
+    &lt;div id="pagination{{index}}" class="skin-vip"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+</script>
+<script id="tpl-faceUploader" type="text/html">
+    &lt;div id="picture"&gt;&lt;img id="faceUploader" alt="请上传头像" src="{{data.src}}" width="400" /&gt;&lt;/div&gt;
+</script>
+<script>
+    seajs.use('/Public/Home/js/settingV2_last.js', function (ex) { ex.all(); });
+    seajs.use('/Public/Home/js/settingV2.js', function (ex) { ex.all(); });
+    seajs.use('/Public/Home/js/setFace.js', function (ex) { ex.all(); });
+</script>
+<script type="text/javascript">seajs.use('/Public/Home/js/thirdheader.js',function(ex){ex.mainHeaderActive();});</script>
+</body>
+</html>
